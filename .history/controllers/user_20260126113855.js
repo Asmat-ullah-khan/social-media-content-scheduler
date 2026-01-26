@@ -13,9 +13,3 @@ export const login = catchAsync(async (req, res, next) => {
   const result = await authService.loginUser(email, password);
   res.status(200).json({ status: "success", data: result });
 });
-export const logout = (req, res) => {
-  res.status(200).json({
-    status: "success",
-    message: "Logged out successfully",
-  });
-};
