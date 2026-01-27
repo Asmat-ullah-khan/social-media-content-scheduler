@@ -2,7 +2,6 @@ import dotenv from "dotenv";
 import app from "./app.js";
 import connectDB from "./config/db.js";
 import publishDuePosts from "./services/publicationlog.js";
-import cron from "node-cron";
 
 // Handle uncaught exceptions
 process.on("uncaughtException", (err) => {
@@ -16,7 +15,7 @@ dotenv.config();
 // Connect to database
 connectDB();
 
-cron.schedule(
+ron.schedule(
   "* * * * *",
   async () => {
     try {
