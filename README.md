@@ -49,7 +49,7 @@ A Node.js/Express backend application for scheduling and managing social media p
 
    ```
    PORT=5000
-   MONGODB_URI=mongodb://localhost:27017/social-media-scheduler
+   MONGODB_URI=...........
    JWT_SECRET=your_jwt_secret_key_here
    JWT_EXPIRE=7d
    NODE_ENV=development
